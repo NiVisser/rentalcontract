@@ -1,0 +1,187 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Mon Jun 17 18:42:09 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "addroom",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_floorlevel",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "_breedtegraad",
+                    "type": "float64"
+                },
+                {
+                    "name": "_lengtegraad",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "checkowner",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_roomnameid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "removerecord",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_roomnameid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "removeroom",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_roomnameid",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "rentroom",
+            "base": "",
+            "fields": [
+                {
+                    "name": "_roomnameid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "_fromdate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "_todate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "room_info",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "floorlevel",
+                    "type": "uint64"
+                },
+                {
+                    "name": "breedtegraad",
+                    "type": "float64"
+                },
+                {
+                    "name": "lengtegraad",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "room_record",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "roomnameid",
+                    "type": "uint64"
+                },
+                {
+                    "name": "username",
+                    "type": "name"
+                },
+                {
+                    "name": "fromdate",
+                    "type": "uint64"
+                },
+                {
+                    "name": "todate",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "addroom",
+            "type": "addroom",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "checkowner",
+            "type": "checkowner",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removerecord",
+            "type": "removerecord",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removeroom",
+            "type": "removeroom",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "rentroom",
+            "type": "rentroom",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "records",
+            "type": "room_record",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "rooms",
+            "type": "room_info",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
